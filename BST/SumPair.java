@@ -15,6 +15,7 @@ public class SumPair {
         temp.nodeData = data;
         temp.leftNode = null;
         temp.rightNode = null;
+
         return temp;
     }
  
@@ -58,14 +59,16 @@ public class SumPair {
     public static void main(String[] args)
     {
         Node root = null;
-        root = insert(root, 10);
-        root = insert(root, 20);
-        root = insert(root, 30);
         root = insert(root, 40);
-        root = insert(root, 50);
+        root = insert(root, 20);
         root = insert(root, 60);
+        root = insert(root, 30);
+        root = insert(root, 10);
+        root = insert(root, 50);
+        root = insert(root, 70);
  
-        int sum = 80;
+        int sum = 130;
+        System.out.println("Sum = " + sum);
         findPair(root, sum);
     }
 }
